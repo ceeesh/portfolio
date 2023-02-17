@@ -3,8 +3,8 @@ import menu from '../../assets/images/menu.png'
 
 const Header = () => {
     return (
-        <header>
-            <div className="flex justify-between py-8 px-5 text-white">
+        <header className="fixed top-0 left-0 right-0 bg-mainBg">
+            <div className="flex justify-between py-8 px-5">
                 <div>
                     <a className="flex gap-3" href='#'>
                         <img className='w-7' src={tempLogo} />
