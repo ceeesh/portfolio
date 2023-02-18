@@ -1,5 +1,6 @@
 import React from 'react'
 import About from './About'
+import Contact from './Contact'
 import Intro from './Intro'
 import Projects from './Projects'
 import Skills from './Skills'
@@ -11,6 +12,7 @@ const Main = () => {
             <About />
             <Skills />
             <Projects />
+            <Contact />
         </main>
     )
 }
