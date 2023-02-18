@@ -16,9 +16,9 @@ import SkillsCard from '../SkillsCard'
 
 const Skills = () => {
     return (
-        <section className="w-full min-h-screen flex flex-col">
+        <section className="w-full min-h-screen flex flex-col mb-20">
             <div className="w-full mb-12">
-                <h2 className="text-4xl lg:text-5xl font-bold mb-4 ">Skills</h2>
+                <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-[#EFD09E]">Skills</h2>
                 <p className="text-lg">Technologies and tools that I use in building websites.</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:grid-cols-6">
@@ -26,13 +26,13 @@ const Skills = () => {
                 <SkillsCard logo={react} title={'React'}/>
                 <SkillsCard logo={vite} title={'Vite'}/>
                 <SkillsCard logo={tailwind} title={'TailwindCSS'}/>
-                <SkillsCard logo={rails} title={'Ruby on Rails'}/>
+                <SkillsCard logo={rails} title={'Rails'}/>
                 <SkillsCard logo={ruby} title={'Ruby'}/>
                 <SkillsCard logo={node} title={'NodeJS'}/>
                 <SkillsCard logo={mongo} title={'MongoDB'}/>
                 <SkillsCard logo={git} title={'Git'}/>
                 <SkillsCard logo={photoshop} title={'Photoshop'}/>
-                <SkillsCard logo={resolve} title={'Davinci Resolve'}/>
+                <SkillsCard logo={resolve} title={'Resolve'}/>
                 <SkillsCard logo={wordpress} title={'WordPress'}/>
                 <SkillsCard logo={bootstrap} title={'Bootstrap'}/>
             </div>
