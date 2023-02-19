@@ -45,25 +45,25 @@ export const projects = [
     },
 ]
 
-// export const socials = [
-//     // {
-//     //     name: 'facebook',
-//     //     logo: <IoLogoFacebook size={22}/>,
-//     //     url: 'https://www.facebook.com/ceejay.malacas',
-//     // },
-//     // {
-//     //     name: 'github',
-//     //     logo: <IoLogoGithub size={22} />,
-//     //     url: 'https://github.com/ceeesh',
-//     // },
-//     // {
-//     //     name: 'linkedin',
-//     //     logo: <IoLogoLinkedin size={22} />,
-//     //     url: 'https://www.linkedin.com/in/cee-jay-malacas-155a25218',
-//     // },
-//     // {
-// 	// 	name: 'instagram',
-// 	// 	logo: <IoLogoInstagram size={22} />,
-// 	// 	url: 'https://www.instagram.com/_malacasc',
-// 	// },
-// ]
+export const socials = [
+    {
+        name: 'facebook',
+        logo: <IoLogoFacebook size={22}/>,
+        url: 'https://www.facebook.com/ceejay.malacas',
+    },
+    {
+        name: 'github',
+        logo: <IoLogoGithub size={22} />,
+        url: 'https://github.com/ceeesh',
+    },
+    {
+        name: 'linkedin',
+        logo: <IoLogoLinkedin size={22} />,
+        url: 'https://www.linkedin.com/in/cee-jay-malacas-155a25218',
+    },
+    {
+		name: 'instagram',
+		logo: <IoLogoInstagram size={22} />,
+		url: 'https://www.instagram.com/_malacasc',
+	},
+]
