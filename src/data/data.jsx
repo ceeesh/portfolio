@@ -39,7 +39,7 @@ export const projects = [
     {
         title: 'Banking App',
         description: 'A simple bank website',
-        stackTech: ['React', 'TailwindCSS', 'sweetalert2', 'daisyui', 'Vite'],
+        stackTech: ['React', 'TailwindCSS', 'sweetalert2', 'DaisyUI', 'Vite'],
         liveUrl: 'https://kzldlgr.github.io/',
         githubRepo: 'https://github.com/ceeesh/kcd-banking-app',
     },
@@ -67,3 +67,26 @@ export const socials = [
 		url: 'https://www.instagram.com/_malacasc',
 	},
 ]
+
+export const navLinks = [
+	{
+		title: 'About',
+		cName: 'nav_item',
+		url: '/about',
+	},
+	{
+		title: 'Skills',
+		cName: 'nav_item',
+		url: '/skills',
+	},
+	{
+		title: 'Projects',
+		cName: 'nav_item',
+		url: '/projects',
+	},
+	{
+		title: 'Contact',
+		cName: 'nav_item',
+		url: '/contact',
+	},
+];
