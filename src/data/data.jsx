@@ -32,14 +32,14 @@ export const projects = [
     {
         title: 'Momentum App',
         description: 'Featuring to-do lists, weather, daily photos, and encouraging quotes.',
-        stackTech: ['JavaScript', 'CSS'],
+        stackTech: ['Vanilla JavaScript', 'CSS'],
         liveUrl: 'https://ceeesh.github.io/MomentumApp/',
         githubRepo: 'https://github.com/ceeesh/MomentumApp',
     },
     {
         title: 'Banking App',
         description: 'A simple bank website',
-        stackTech: ['React', 'TailwindCSS', 'sweetalert2', 'DaisyUI', 'Vite'],
+        stackTech: ['React', 'TailwindCSS', 'Sweetalert2', 'DaisyUI', 'Vite'],
         liveUrl: 'https://kzldlgr.github.io/',
         githubRepo: 'https://github.com/ceeesh/kcd-banking-app',
     },

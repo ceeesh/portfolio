@@ -12,7 +12,7 @@ const Header = () => {
         setNavOpen(prevState => !prevState)
     }
 
-    navOpen ? body.classList.remove('overflow-hidden') : body.classList.add('overflow-hidden')
+    !navOpen ? body.classList.remove('overflow-hidden') : body.classList.add('overflow-hidden')
 
     return (
         <header className="fixed top-0 left-0 right-0 bg-mainBg z-50">
@@ -24,7 +24,7 @@ const Header = () => {
                     </a>
                 </div>
                 <button className="md:hidden" onClick={openNav}>
-                    <img className={`${navOpen ? 'w-7' : 'w-5'} `} src={navOpen ? menu : close} />
+                    <img className={`${navOpen ? 'w-5' : 'w-7'} `} src={navOpen ? close : menu} />
                 </button>
                 <nav className="hidden md:block">
                     <ul className="flex items-center justify-center w-full text-lg gap-10">
@@ -35,7 +35,7 @@ const Header = () => {
                 </nav>
             </div>
 
-            <div className={`${navOpen ? 'hidden' : 'flex'} top-0 absolute left-0 right-0 h-screen z-[-20] bg-mainBg`}>
+            <div className={`${navOpen ? 'flex' : 'hidden'} top-0 absolute left-0 right-0 h-screen z-[-20] bg-mainBg`}>
                 <nav className="mx-auto px-5 w-full h-full flex">
                     <ul className="flex flex-col items-center justify-center gap-6 w-full text-xl">
                         {navLinks.map((nav, indx) => (

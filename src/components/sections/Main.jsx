@@ -7,7 +7,7 @@ import Skills from './Skills'
 
 const Main = () => {
     return (
-        <main className="w-full mx-auto px-5">
+        <main className="w-full mx-auto px-5 max-w-6xl md:px-10 lg:px-12 xl:px-0 z-20">
             <Intro />
             <About />
             <Skills />
