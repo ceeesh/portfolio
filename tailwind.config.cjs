@@ -7,13 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'mainBg': '#0E0E0E',
-        'mainTxt': '#FBEBD8',
-        'secondaryTxt': '#EFD09E',
-        'ndblue': '#90A9B7',
-        'beige': '#D2D8B3',
-        'btnbg': 'rgba(239, 208, 158, 0.2)'
-      }
+        'mainBg': 'rgb(15, 23, 42, 1)',
+        'mainTxt': 'white',
+        'secondaryTxt': '#bdbddd',
+        'ndblue': '#cdcdff',
+        'btnbg': '#2a2f4c',
+      },
     },
   },
   plugins: [],

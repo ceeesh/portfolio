@@ -9,7 +9,7 @@ const Contact = () => {
                 <p className="text-center text-whiteSecondary mb-12">
                     Currently, I am looking for opportunities and accepting freelance projects. If you think I am a good asset, kindly send me a message.
                 </p>
-                <a className="px-12 py-2.5 text-lg rounded-md border-[0.1rem] border-secondaryTxt text-mainTxt bg-btnbg">Say Hello !</a>
+                <a className="px-12 py-2.5 text-lg rounded-md border-[0.1rem] border-mainTxt text-mainTxt bg-btnbg">Say Hello !</a>
             </div>
         </section>
     )
