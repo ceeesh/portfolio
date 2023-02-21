@@ -12,6 +12,7 @@ module.exports = {
         'secondaryTxt': '#bdbddd',
         'ndblue': '#cdcdff',
         'btnbg': '#2a2f4c',
+        'btnHvr': 'rgb(15, 23, 42, 0.1)'
       },
     },
   },

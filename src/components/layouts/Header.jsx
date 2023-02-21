@@ -27,10 +27,13 @@ const Header = () => {
                     <img className={`${navOpen ? 'w-5' : 'w-7'} `} src={navOpen ? close : menu} />
                 </button>
                 <nav className="hidden md:block">
-                    <ul className="flex items-center justify-center w-full text-lg gap-10">
-                        {navLinks.map((nav, indx) => (
-                            <li key={indx} className="text-mainTxt"><a href="#">{nav.title}</a></li>
-                        ))}
+                    <ul className="flex items-center justify-center w-full text-lg gap-6">
+                        {navLinks.map((nav, indx) => {
+                            if(nav.cName === 'nav_resume'){
+                                return <li key={indx} className="text-mainTxt bg-red border-[0.1rem] py-2 px-6 rounded-md bg-btnbg"><a href="#">{nav.title}</a></li>
+                            }
+                            return <li key={indx} className="text-mainTxt"><a href="#">{nav.title}</a></li>
+                        })}
                     </ul>
                 </nav>
             </div>
@@ -49,3 +52,5 @@ const Header = () => {
 }
 
 export default Header
+
+{/* <li key={indx} className="text-mainTxt"><a href="#">{nav.title}</a></li> */}

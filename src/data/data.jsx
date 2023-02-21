@@ -89,4 +89,9 @@ export const navLinks = [
 		cName: 'nav_item',
 		url: '/contact',
 	},
+    {
+		title: 'Resume',
+		cName: 'nav_resume',
+		url: '/resume',
+	},
 ];

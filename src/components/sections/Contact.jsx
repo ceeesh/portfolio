@@ -3,13 +3,13 @@ import { IoLogoFacebook, IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from "r
 
 const Contact = () => {
     return (
-        <section className='h-96 my-16'>
+        <section className='h-96 mt-16 mb-40'>
             <div className="max-w-xl mx-auto h-full flex flex-col items-center justify-center">
                 <h2 className="text-5xl font-bold mb-4 text-primary flex justify-center text-mainTxt">Get In Touch</h2>
                 <p className="text-center text-whiteSecondary mb-12">
                     Currently, I am looking for opportunities and accepting freelance projects. If you think I am a good asset, kindly send me a message.
                 </p>
-                <a className="px-12 py-2.5 text-lg rounded-md border-[0.1rem] border-mainTxt text-mainTxt bg-btnbg">Say Hello !</a>
+                <a className="px-12 py-2.5 text-lg rounded-md border-[0.1rem] border-mainTxt text-mainTxt bg-btnbg hover:bg-btnHvr">Say Hello !</a>
             </div>
         </section>
     )

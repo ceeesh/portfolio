@@ -16,12 +16,12 @@ const ProjectsCard = ({ project }) => {
             </ul>
             <ul className="flex items-center justify-center gap-4 text-sm">
                 <li>
-                    <a  className="text-mainTxt" href={project.githubRepo}>
+                    <a  className="text-mainTxt" href={project.githubRepo} target="_blank">
                         <IoLogoGithub size={23} />
                     </a>
                 </li>
                 <li>
-                    <a className="text-mainTxt" >
+                    <a className="text-mainTxt" href={project.liveUrl} target="_blank">
                         <HiOutlineExternalLink size={23} />
                     </a>
                 </li>
