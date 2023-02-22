@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutPage = () => {
     return (
-        <section className="w-full min-h-screen flex flex-col mt-[2200px]">
+        <section className="w-full min-h-screen flex flex-col pt-[250px] mx-auto px-5 max-w-6xl md:px-10 lg:px-12 xl:px-0 z-50">
             <h2 className="text-4xl font-bold mb-8 text-mainTxt">About</h2>
             <div>
                 <div className="flex flex-col space-y-4 text-justify">

@@ -20,11 +20,9 @@ const Header = ({children}) => {
         <header className="fixed top-0 left-0 right-0 bg-mainBg z-50">
             <div className="flex justify-between py-8 px-5 z-40">
                 <div>
-                    <Link to='/'>
-                    <a className="flex gap-3">
+                    <Link to='/' className="flex gap-3">
                         <img className='w-7' src={tempLogo} />
                         <h2 className="font-bold text-lg tracking-wider text-mainTxt">Cee</h2>
-                    </a>
                     </Link>
                 </div>
                 <button className="md:hidden" onClick={openNav}>
@@ -36,7 +34,7 @@ const Header = ({children}) => {
                             if(nav.cName === 'nav_resume'){
                                 return <li key={indx} className="text-mainTxt bg-red border-[0.1rem] py-2 px-6 rounded-md bg-btnbg"><a href="#">{nav.title}</a></li>
                             }
-                            return <Link to={nav.url} key={indx}><li  className="text-mainTxt">{nav.title}</li></Link>
+                            return <Link to={nav.url} key={indx} className="text-mainTxt">{nav.title}</Link>
                         })}
                     </ul>
                 </nav>
