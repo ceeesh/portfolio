@@ -1,4 +1,17 @@
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from "react-icons/io5";
+import js from '../assets/images/js.png'
+import react from '../assets/images/react.svg'
+import vite from '../assets/images/vite.svg'
+import tailwind from '../assets/images/tailwind.svg'
+import rails from '../assets/images/rails.png'
+import ruby from '../assets/images/ruby.png'
+import node from '../assets/images/node.png'
+import mongo from '../assets/images/mongo.png'
+import resolve from '../assets/images/resolve.png'
+import git from '../assets/images/git.svg'
+import photoshop from '../assets/images/photoshop.svg'
+import wordpress from '../assets/images/wordpress.png'
+import bootstrap from '../assets/images/bootstrap.png'
 
 export const projects = [
     {
@@ -48,7 +61,7 @@ export const projects = [
 export const socials = [
     {
         name: 'facebook',
-        logo: <IoLogoFacebook size={22}/>,
+        logo: <IoLogoFacebook size={22} />,
         url: 'https://www.facebook.com/ceejay.malacas',
     },
     {
@@ -62,36 +75,91 @@ export const socials = [
         url: 'https://www.linkedin.com/in/cee-jay-malacas-155a25218',
     },
     {
-		name: 'instagram',
-		logo: <IoLogoInstagram size={22} />,
-		url: 'https://www.instagram.com/_malacasc',
-	},
+        name: 'instagram',
+        logo: <IoLogoInstagram size={22} />,
+        url: 'https://www.instagram.com/_malacasc',
+    },
 ]
 
 export const navLinks = [
-	{
-		title: 'About',
-		cName: 'nav_item',
-		url: '/about',
-	},
-	{
-		title: 'Skills',
-		cName: 'nav_item',
-		url: '/skills',
-	},
-	{
-		title: 'Projects',
-		cName: 'nav_item',
-		url: '/projects',
-	},
-	{
-		title: 'Contact',
-		cName: 'nav_item',
-		url: '/contact',
-	},
     {
-		title: 'Resume',
-		cName: 'nav_resume',
-		url: '/resume',
-	},
+        title: 'About',
+        cName: 'nav_item',
+        url: '/about',
+    },
+    {
+        title: 'Skills',
+        cName: 'nav_item',
+        url: '/skills',
+    },
+    {
+        title: 'Projects',
+        cName: 'nav_item',
+        url: '/projects',
+    },
+    {
+        title: 'Contact',
+        cName: 'nav_item',
+        url: '/contact',
+    },
+    {
+        title: 'Resume',
+        cName: 'nav_resume',
+        url: '/resume',
+    },
 ];
+
+export const skillStack = [
+    {
+        title: 'JavaScript',
+        logo: js
+    },
+    {
+        title: 'React',
+        logo: react
+    },
+    {
+        title: 'Vite',
+        logo: vite
+    },
+    {
+        title: 'tailwindCSS',
+        logo: tailwind
+    },
+    {
+        title: 'Rails',
+        logo: rails
+    },
+    {
+        title: 'Ruby',
+        logo: ruby
+    },
+    {
+        title: 'Node',
+        logo: node
+    },
+    {
+        title: 'Mongo',
+        logo: mongo
+    },
+    {
+        title: 'Resolve',
+        logo: resolve
+    },
+    {
+        title: 'Git',
+        logo: git
+    },
+    {
+        title: 'Photoshop',
+        logo: photoshop
+    },
+    {
+        title: 'Wordpress',
+        logo: wordpress
+    },
+    {
+        title: 'Bootstrap',
+        logo: bootstrap
+    },
+]

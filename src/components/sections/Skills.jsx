@@ -12,6 +12,7 @@ import photoshop from '../../assets/images/photoshop.svg'
 import wordpress from '../../assets/images/wordpress.png'
 import bootstrap from '../../assets/images/bootstrap.png'
 import SkillsCard from '../SkillsCard'
+import { skillStack } from '../../data/data'
 
 
 const Skills = () => {
@@ -22,22 +23,26 @@ const Skills = () => {
                 <p className="text-lg">Technologies and tools that I use in building websites.</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:grid-cols-6">
-                <SkillsCard logo={js} title={'JavaScript'}/>
-                <SkillsCard logo={react} title={'React'}/>
-                <SkillsCard logo={vite} title={'Vite'}/>
-                <SkillsCard logo={tailwind} title={'TailwindCSS'}/>
-                <SkillsCard logo={rails} title={'Rails'}/>
-                <SkillsCard logo={ruby} title={'Ruby'}/>
-                <SkillsCard logo={node} title={'NodeJS'}/>
-                <SkillsCard logo={mongo} title={'MongoDB'}/>
-                <SkillsCard logo={git} title={'Git'}/>
-                <SkillsCard logo={photoshop} title={'Photoshop'}/>
-                <SkillsCard logo={resolve} title={'Resolve'}/>
-                <SkillsCard logo={wordpress} title={'WordPress'}/>
-                <SkillsCard logo={bootstrap} title={'Bootstrap'}/>
+            {skillStack.map((skill, indx) => (
+                <SkillsCard key={indx} title={skill.title} logo={skill.logo}/>
+            ))}
             </div>
         </section>
     )
 }
 
 export default Skills
+
+    // < SkillsCard logo = { js } title = { 'JavaScript'} />
+    //             <SkillsCard logo={react} title={'React'}/>
+    //             <SkillsCard logo={vite} title={'Vite'}/>
+    //             <SkillsCard logo={tailwind} title={'TailwindCSS'}/>
+    //             <SkillsCard logo={rails} title={'Rails'}/>
+    //             <SkillsCard logo={ruby} title={'Ruby'}/>
+    //             <SkillsCard logo={node} title={'NodeJS'}/>
+    //             <SkillsCard logo={mongo} title={'MongoDB'}/>
+    //             <SkillsCard logo={git} title={'Git'}/>
+    //             <SkillsCard logo={photoshop} title={'Photoshop'}/>
+    //             <SkillsCard logo={resolve} title={'Resolve'}/>
+    //             <SkillsCard logo={wordpress} title={'WordPress'}/>
+    //             <SkillsCard logo={bootstrap} title={'Bootstrap'}/>

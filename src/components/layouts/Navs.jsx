@@ -15,7 +15,7 @@ const Navs = () => {
 
                 <div className="flex flex-col items-center justify-center gap-6 text-mainTxt w-6">
                     <a className="rotate-90 text-xs pr-44">ceejaymalacas17@gmail.com</a>
-                    <div class="w-[1px] h-24 bg-mainTxt"></div>
+                    <div className="w-[1px] h-24 bg-mainTxt"></div>
                 </div>
             </div>
         </div>
