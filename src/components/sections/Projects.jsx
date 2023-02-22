@@ -15,7 +15,10 @@ const Projects = () => {
                 <ProjectsCard project={project} key={indx}/>
                ))}
             </div>
-            <div className="w-full flex items-center justify-center"><a className="bg-btnbg hover:bg-btnHvr px-12 py-2.5 text-lg rounded-md text-mainTxt border-[0.1rem] border-mainTxt font-medium">See more</a></div>
+            <div className="w-full flex items-center justify-center">
+                <a className="bg-btnbg hover:bg-btnHvr px-12 py-2.5 text-lg rounded-md text-mainTxt border-[0.1rem] border-mainTxt font-medium hover:-translate-y-1 transition all duration-300 delay-75">
+                    See more</a>
+                    </div>
         </section>
     )
 }
