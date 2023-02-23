@@ -1,5 +1,4 @@
 import React from 'react'
-import { IoLogoFacebook, IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from "react-icons/io5";
 
 const Contact = () => {
     return (
@@ -9,7 +8,7 @@ const Contact = () => {
                 <p className="text-center text-whiteSecondary mb-12">
                     Currently, I am looking for opportunities and accepting freelance projects. If you think I am a good asset, kindly send me a message.
                 </p>
-                <a className="px-12 py-2.5 text-lg rounded-md border-[0.1rem] border-mainTxt text-mainTxt bg-btnbg hover:bg-btnHvr">Say Hello !</a>
+                <a className="px-12 py-2.5 text-lg rounded-md border-[0.1rem] border-mainTxt text-mainTxt bg-btnbg hover:bg-btnHvr hover:-translate-y-1 transition all duration-300 delay-75">Say Hello !</a>
             </div>
         </section>
     )
