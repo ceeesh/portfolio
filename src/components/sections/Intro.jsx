@@ -1,8 +1,12 @@
-import React from 'react'
+import { motion, useScroll } from "framer-motion"
 
 const Intro = () => {
   return (
-    <section className="relative w-full flex flex-col items-start min-h-screen justify-center mb-20">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="relative w-full flex flex-col items-start min-h-screen justify-center mb-20">
       <p className="text-lg mb-4 text-secondaryTxt z-20 ">Hey there! I am</p>
       <h1 className="text-4xl font-bold mb-4 lg:text-7xl text-mainTxt z-20 ">Cee Jay Malacas</h1>
       <h2 className="text-3xl lg:text-7xl font-bold mb-4 z-20 ">Coding for more money?!</h2>
@@ -17,7 +21,7 @@ const Intro = () => {
         <span>a</span>
         <span>s</span>
       </p>
-    </section>
+    </motion.section>
   )
 }
 
