@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
     return (
-        <section className="w-full min-h-screen flex flex-col">
-            <h2 className="text-4xl font-bold mb-8 text-mainTxt">About</h2>
+        <section className="w-full min-h-screen flex flex-col justify-center">
+            <h2 className="text-4xl font-bold mb-8 text-mainTxt lg:text-5xl">About</h2>
             <div>
                 <div className="flex flex-col space-y-4 text-justify">
                     <h3 className="text-1xl text-secondaryTxt">Hi. I'm Cee Jay.</h3>

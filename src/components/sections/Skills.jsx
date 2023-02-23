@@ -4,10 +4,10 @@ import { skillStack } from '../../data/data'
 
 const Skills = () => {
     return (
-        <section className="w-full min-h-screen flex flex-col mb-20">
+        <section className="w-full min-h-screen flex flex-col justify-center mb-20">
             <div className="w-full mb-12">
                 <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-mainTxt">Skills</h2>
-                <p className="text-lg">Technologies and tools that I use in building websites.</p>
+                <p className="text-lg">These are the technology stacks in which I am most interested in developing innovative projects and learning more.</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:grid-cols-6">
             {skillStack.map((skill, indx) => (
