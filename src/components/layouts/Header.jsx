@@ -18,10 +18,10 @@ const Header = ({ children }) => {
 
     return (
         <>
-            <header className="fixed top-0 left-0 right-0 bg-mainBg z-50">
+            <header className="fixed top-0 left-0 right-0 bg-mainBg z-50 w-full mx-auto px-5 max-w-6xl md:px-10 lg:px-12 xl:px-0 ">
                 <div className="flex justify-between py-8 px-5 z-40">
                     <motion.div
-                    animate={{ x: [-150, 0]}}
+                    animate={{ x: [-550, 0]}}
                     transition={{duration: 1}}
                     >
                         <Link to='/' className="flex gap-3">
@@ -36,13 +36,13 @@ const Header = ({ children }) => {
                         <img className={`${navOpen ? 'w-5' : 'w-7'} `} src={navOpen ? close : menu} />
                     </motion.button>
                     <motion.nav
-                        animate={{ x: [550, 0] }}
+                        animate={{ x: [850, 0] }}
                         transition={{duration: 0.9}}
                         className="hidden md:block">
                         <ul className="flex items-center justify-center w-full text-lg gap-6">
                             {navLinks.map((nav, indx) => {
-                                if (nav.cName === 'nav_resume') {
-                                    return <li key={indx} className="text-mainTxt bg-red border-[0.1rem] py-2 px-6 rounded-md bg-btnbg"><a href="#">{nav.title}</a></li>
+                                if (nav.cName === 'lightMode') {
+                                    return <li key={indx} className="cursor-pointer"><img src={nav.url}/></li>
                                 }
                                 return <Link to={nav.url} key={indx} className="text-mainTxt">{nav.title}</Link>
                             })}

@@ -2,10 +2,10 @@ import ProjectsCard from "../ProjectsCard";
 import { projects } from '../../data/data';
 
 
-const Projects = ({pTop}) => {
+const Projects = () => {
 
     return (
-        <section className={`min-h-screen  ${pTop ? `pt-[140px] pb-10` : ''}`}>
+        <section className={`min-h-screen pb-12`}>
             <div className="mb-12">
                 <h2 className="text-mainTxt text-4xl lg:text-5xl font-bold mb-4">Projects</h2>
                 <p className="text-1xl"> Check out all the projects that I made with <span className="text-2xl text-secondaryTxt">&hearts;</span></p>

@@ -1,4 +1,5 @@
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from "react-icons/io5";
+import lightMode from '../assets/images/sun.png'
 import js from '../assets/images/js.png'
 import react from '../assets/images/react.svg'
 import vite from '../assets/images/vite.svg'
@@ -56,6 +57,34 @@ export const projects = [
         liveUrl: 'https://kzldlgr.github.io/',
         githubRepo: 'https://github.com/ceeesh/kcd-banking-app',
     },
+    {
+        title: 'Dictionary App',
+        description: 'A cloned dictionary, gives their meaning, or gives the equivalent words in a different language',
+        stackTech: ['React', 'TailwindCSS', 'Vite', 'API'],
+        liveUrl: 'https://dictionary-app-vite-react.netlify.app/',
+        githubRepo: 'https://github.com/ceeesh/dictionary-app',
+    },
+    {
+        title: 'To-Do App',
+        description: 'A cloned dictionary, gives their meaning, or gives the equivalent words in a different language',
+        stackTech: ['React', 'TailwindCSS', 'Vite', 'API'],
+        liveUrl: 'https://todo-vite-react.netlify.app/',
+        githubRepo: 'https://github.com/ceeesh/todo-app-react',
+    },
+    {
+        title: 'Advice Generator App',
+        description: 'A cloned dictionary, gives their meaning, or gives the equivalent words in a different language',
+        stackTech: ['React', 'TailwindCSS', 'Vite', 'API'],
+        liveUrl: 'https://advice-gen-app-cjm.netlify.app/',
+        githubRepo: 'https://github.com/ceeesh/advice-generator-app',
+    },
+    {
+        title: 'Tic Tac Toe',
+        description: 'Tic Tac Toe',
+        stackTech: ['VanillaJS', 'CSS'],
+        liveUrl: 'https://ceeesh.github.io/tictactoe/',
+        githubRepo: 'https://github.com/ceeesh/tictactoe',
+    },
 ]
 
 export const socials = [
@@ -103,9 +132,8 @@ export const navLinks = [
         url: '/contact',
     },
     {
-        title: 'Resume',
-        cName: 'nav_resume',
-        url: '/resume',
+        cName: 'lightMode',
+        url: lightMode,
     },
 ];
 
@@ -163,3 +191,5 @@ export const skillStack = [
         logo: bootstrap
     },
 ]
+
+export const lastName = 'MALACAS'

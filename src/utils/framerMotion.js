@@ -38,3 +38,15 @@ export const fade = (duration, delay) => ({
 		},
 	},
 });
+
+export const spanFade = (delay) => ({
+	hidden: { opacity: 0 },
+	show: {
+		opacity: 1,
+		transition: {
+			duration: 0.8,
+			delay: 0.2 *  Math.floor(delay),
+			ease: 'easeInOut',
+		},
+	},
+});
