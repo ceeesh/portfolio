@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = ({pTop}) => {
     return (
-        <section className='h-96 mt-16 mb-40 z-50'>
+        <section className={`z-50 ${pTop ? 'h-screen' : 'h-96 mb-40 mt-36'}`}>
             <div className="max-w-xl mx-auto h-full flex flex-col items-center justify-center">
                 <h2 className="text-5xl font-bold mb-4 text-primary flex justify-center text-mainTxt">Get In Touch</h2>
                 <p className="text-center text-whiteSecondary mb-12">

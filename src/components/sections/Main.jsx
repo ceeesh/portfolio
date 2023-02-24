@@ -8,7 +8,7 @@ import Bottom from './Bottom'
 
 const Main = () => {
     return (
-        <main className="w-full mx-auto px-5 max-w-6xl md:px-10 lg:px-12 xl:px-0 z-50">
+        <main className="w-full mx-auto px-5 max-w-6xl md:px-10 lg:px-12 xl:px-0 z-[100]">
             <Intro />
             <About />
             <Skills />
