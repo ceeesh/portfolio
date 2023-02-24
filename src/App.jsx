@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage"
 import SkillsPage from "./pages/SkillsPage"
 import ProjectsPage from "./pages/ProjectsPage"
 import ContactPage from "./pages/ContactPage"
+import Bottom from './components/sections/Bottom'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         </Routes>
       </Header>
       <Navs />
+      <Bottom />
     </div>
   )
 }

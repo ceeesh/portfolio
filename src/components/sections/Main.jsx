@@ -14,7 +14,6 @@ const Main = () => {
             <Skills />
             <Projects />
             <Contact />
-            <Bottom />
         </main>
     )
 }

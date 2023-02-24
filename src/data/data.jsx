@@ -23,6 +23,13 @@ export const projects = [
         githubRepo: 'https://github.com/ceeesh/portfolio',
     },
     {
+        title: 'Elder Armor USA',
+        description: 'Tic Tac Toe',
+        stackTech: ['WordPress', 'Elementor', 'WooCommerce', 'PHP'],
+        liveUrl: 'https://elderarmorusa.com/',
+        githubRepo: '',
+    },
+    {
         title: 'React Calculator App',
         description: 'Calculator that has multiple colorful theme.',
         stackTech: ['React', 'TailwindCSS', 'Vite'],
