@@ -19,7 +19,8 @@ const Header = ({ children }) => {
 
     return (
         <>
-            <header className="fixed top-0 left-0 right-0 bg-mainBg z-50 w-full mx-auto px-5 max-w-6xl md:px-10 lg:px-12 xl:px-0">
+            <header className="fixed top-0 left-0 right-0 bg-mainBg z-50 w-full mx-auto px-5  md:px-10 lg:px-12 xl:px-0">
+
                 <div className="flex justify-between py-8 px-5 z-40">
                     <motion.div
                         variants={bounceIn(-550, 'spring', 1, 0.3)}
@@ -27,8 +28,8 @@ const Header = ({ children }) => {
                         animate="onscreen"
                     >
                         <Link to='/' className="flex gap-3">
-                            <img className='w-7 ' src={tempLogo} />
-                            <h2 className="font-bold text-lg tracking-wider text-mainTxt ">Cee</h2>
+                            <img className='w-7' src={tempLogo} />
+                            <h2 className="font-bold text-lg tracking-wider text-mainTxt">Cee</h2>
                         </Link>
                     </motion.div>
                     <motion.button
