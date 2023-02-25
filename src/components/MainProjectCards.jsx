@@ -3,19 +3,19 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 
 const MainProjectCards = ({ project }) => {
     return (
-        <div className="project_card relative p-8 w-full grid grid-cols-2 gap-4 overflow-hidden border-2 border-solid border-brdrC rounded-3xl opacity-100 z-50">
-            <div className="max-h-[500px] overflow-hidden opacity-100 z-10">
+        <div className="project_card relative p-8 w-full grid grid-cols-2 gap-4 overflow-hidden border-2 border-solid border-brdrC rounded-3xl opacity-100 ">
+            <div className="max-h-[500px] overflow-hidden opacity-100 z-20">
                 <span>
-                    <img className="w-full opacity-100 z-10" src={project.img} />
+                    <img className="w-full opacity-100" src={project.img} />
                 </span>
             </div>
-            <div className="opacity-100 flex flex-col justify-end gap-8 ">
-                <h2 className="text-4xl text-white z-10">{project.title}</h2>
-                <p className="text-lg font-thin text-white z-10" >{project.description}</p>
-                <div className="mb-8 flex w-full gap-4 z-10">
+            <div className="opacity-100 flex flex-col justify-end gap-8 z-10">
+                <h2 className="text-4xl text-white ">{project.title}</h2>
+                <p className="text-lg font-thin text-white" >{project.description}</p>
+                <div className="mb-8 flex w-full gap-4 ">
                     <a className="max-w-[300px] py-4 px-8 flex 
                     items-center justify-center bg-[#e5e7eb] 
-                    text-[#1e293b] rounded-full gap-2 z-10 cursor-pointer"
+                    text-[#1e293b] rounded-full gap-2  cursor-pointer"
                     href={project.liveUrl}
                     target="_blank">
                         <i>
@@ -25,7 +25,7 @@ const MainProjectCards = ({ project }) => {
                     </a>
                     <a className="max-w-[300px] py-1 px-8 flex 
                     items-center justify-center bg-[#e5e7eb] 
-                    text-[#1e293b] rounded-full gap-2 z-10 cursor-pointer"
+                    text-[#1e293b] rounded-full gap-2 cursor-pointer"
                     href={project.githubRepo}
                     target="_blank">
                         <i>

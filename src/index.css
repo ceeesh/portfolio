@@ -23,6 +23,7 @@
   background-size: cover;
   background-position: center;
   filter: blur(18px);
+  z-index: ;
 }
 
 .project_card:nth-child(even):after {
@@ -35,6 +36,7 @@
   background-size: cover;
   background-position: center;
   filter: blur(18px);
+  z-index: 1;
 }
 
 .card2:hover {

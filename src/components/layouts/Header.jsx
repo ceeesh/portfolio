@@ -27,8 +27,8 @@ const Header = ({ children }) => {
                         animate="onscreen"
                     >
                         <Link to='/' className="flex gap-3">
-                            <img className='w-7' src={tempLogo} />
-                            <h2 className="font-bold text-lg tracking-wider text-mainTxt">Cee</h2>
+                            <img className='w-7 ' src={tempLogo} />
+                            <h2 className="font-bold text-lg tracking-wider text-mainTxt ">Cee</h2>
                         </Link>
                     </motion.div>
                     <motion.button
