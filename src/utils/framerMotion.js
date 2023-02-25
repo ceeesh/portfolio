@@ -1,6 +1,6 @@
 export const staggerContainer = (staggerChildren, delayChildren) => ({
-	hidden: {},
-	show: {
+	offscreen: {},
+	onscreen: {
 		transition: {
 			staggerChildren,
 			delayChildren,
@@ -28,8 +28,8 @@ export const fadeIn = (direction, type, delay, duration) => ({
 });
 
 export const fade = (duration, delay) => ({
-	hidden: { opacity: 0 },
-	show: {
+	offscreen: { opacity: 0 },
+	onscreen: {
 		opacity: 1,
 		transition: {
 			duration: duration,
@@ -40,13 +40,27 @@ export const fade = (duration, delay) => ({
 });
 
 export const spanFade = (delay) => ({
-	hidden: { opacity: 0 },
-	show: {
+	offscreen: { opacity: 0 },
+	onscreen: {
 		opacity: 1,
 		transition: {
 			duration: 0.8,
 			delay: 0.2 *  Math.floor(delay),
 			ease: 'easeInOut',
+		},
+	},
+});
+
+export const bounceIn = (direction, type, duration, bounce) => ({
+	offscreen: {
+		x: direction
+	},
+	onscreen: {
+		x: 0,
+		transition: {
+			type: type,
+			duration: duration,
+			bounce: bounce
 		},
 	},
 });
