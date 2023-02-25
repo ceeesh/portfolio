@@ -1,6 +1,5 @@
 import React from 'react'
-import ProjectsCard from '../components/ProjectsCard'
-import Project from '../components/sections/Projects'
+import MainProjectCards from '../components/MainProjectCards'
 import { projects } from '../data/data'
 
 const ProjectsPage = () => {
@@ -15,7 +14,7 @@ const ProjectsPage = () => {
         </div>
         <div className="grid grid-cols-1 gap-6 mb-8 mx-6 sm:mx-12 md:mx-20 lg:mx-32">
           {projects.map((project, indx) => (
-            <ProjectsCard project={project} key={indx} card={true} />
+            <MainProjectCards project={project} key={indx} card={true}/>
           ))}
         </div>
       </section>

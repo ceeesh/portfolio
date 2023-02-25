@@ -19,7 +19,7 @@ const Header = ({ children }) => {
 
     return (
         <>
-            <header className="fixed top-0 left-0 right-0 bg-mainBg z-50 w-full mx-auto px-5 max-w-6xl md:px-10 lg:px-12 xl:px-0 ">
+            <header className="fixed top-0 left-0 right-0 bg-mainBg z-50 w-full mx-auto px-5 max-w-6xl md:px-10 lg:px-12 xl:px-0">
                 <div className="flex justify-between py-8 px-5 z-40">
                     <motion.div
                         variants={bounceIn(-550, 'spring', 1, 0.3)}

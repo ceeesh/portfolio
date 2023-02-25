@@ -13,6 +13,17 @@ import git from '../assets/images/git.svg'
 import photoshop from '../assets/images/photoshop.svg'
 import wordpress from '../assets/images/wordpress.png'
 import bootstrap from '../assets/images/bootstrap.png'
+import elderarmorusa from '../assets/images/elderarmor.png'
+import calc from '../assets/images/calcombi.png'
+import ecommerce from '../assets/images/ecommerce.png'
+import momentum from '../assets/images/momentum.png'
+import bankingapp from '../assets/images/bankapp.png'
+import dict from '../assets/images/dictionary.png'
+import todo from '../assets/images/todoapp.png'
+import advice from '../assets/images/advice.png'
+import tictactoe from '../assets/images/tictactoe.png'
+import youtube from '../assets/images/youtube.png'
+import portfolio from '../assets/images/portfolio.png'
 
 export const projects = [
     {
@@ -21,6 +32,7 @@ export const projects = [
         stackTech: ['React', 'TailwindCSS', 'Framer Motion', 'Vite'],
         liveUrl: 'https://ceeesh.github.io/MomentumApp/',
         githubRepo: 'https://github.com/ceeesh/portfolio',
+        img: portfolio,
     },
     {
         title: 'Elder Armor USA',
@@ -28,6 +40,7 @@ export const projects = [
         stackTech: ['WordPress', 'Elementor', 'WooCommerce', 'PHP'],
         liveUrl: 'https://elderarmorusa.com/',
         githubRepo: '',
+        img: elderarmorusa,
     },
     {
         title: 'React Calculator App',
@@ -35,6 +48,7 @@ export const projects = [
         stackTech: ['React', 'TailwindCSS', 'Vite'],
         liveUrl: 'https://calc-vite-jy.netlify.app/',
         githubRepo: 'https://github.com/ceeesh/calc-react',
+        img: calc,
     },
     {
         title: 'E-commerce Product Page',
@@ -42,6 +56,7 @@ export const projects = [
         stackTech: ['React', 'TailwindCSS', 'Vite'],
         liveUrl: 'https://ecommerce-productpage-jy.netlify.app/',
         githubRepo: 'https://github.com/ceeesh/e-commerce-product-page',
+        img: ecommerce,
     },
     {
         title: 'Youtube Clone Appp',
@@ -49,6 +64,7 @@ export const projects = [
         stackTech: ['React', 'TailwindCSS', 'Youtube API', 'Vite'],
         liveUrl: 'https://jy-yt-clone.netlify.app/',
         githubRepo: 'https://github.com/ceeesh/youtube-clone-app',
+        img: youtube,
     },
     {
         title: 'Momentum App',
@@ -56,6 +72,7 @@ export const projects = [
         stackTech: ['Vanilla JavaScript', 'CSS'],
         liveUrl: 'https://ceeesh.github.io/MomentumApp/',
         githubRepo: 'https://github.com/ceeesh/MomentumApp',
+        img: momentum,
     },
     {
         title: 'Banking App',
@@ -63,6 +80,7 @@ export const projects = [
         stackTech: ['React', 'TailwindCSS', 'Sweetalert2', 'DaisyUI', 'Vite'],
         liveUrl: 'https://kzldlgr.github.io/',
         githubRepo: 'https://github.com/ceeesh/kcd-banking-app',
+        img: bankingapp,
     },
     {
         title: 'Dictionary App',
@@ -70,6 +88,7 @@ export const projects = [
         stackTech: ['React', 'TailwindCSS', 'Vite', 'API'],
         liveUrl: 'https://dictionary-app-vite-react.netlify.app/',
         githubRepo: 'https://github.com/ceeesh/dictionary-app',
+        img: dict,
     },
     {
         title: 'To-Do App',
@@ -77,6 +96,7 @@ export const projects = [
         stackTech: ['React', 'TailwindCSS', 'Vite', 'API'],
         liveUrl: 'https://todo-vite-react.netlify.app/',
         githubRepo: 'https://github.com/ceeesh/todo-app-react',
+        img: todo,
     },
     {
         title: 'Advice Generator App',
@@ -84,6 +104,7 @@ export const projects = [
         stackTech: ['React', 'TailwindCSS', 'Vite', 'API'],
         liveUrl: 'https://advice-gen-app-cjm.netlify.app/',
         githubRepo: 'https://github.com/ceeesh/advice-generator-app',
+        img: advice,
     },
     {
         title: 'Tic Tac Toe',
@@ -91,6 +112,7 @@ export const projects = [
         stackTech: ['VanillaJS', 'CSS'],
         liveUrl: 'https://ceeesh.github.io/tictactoe/',
         githubRepo: 'https://github.com/ceeesh/tictactoe',
+        img: tictactoe,
     },
 ]
 
