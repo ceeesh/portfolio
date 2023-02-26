@@ -12,7 +12,7 @@ const Intro = () => {
       className="relative w-full flex flex-col items-start min-h-screen justify-center mb-20">
       <motion.p variants={fade(0.8, .3)} className="text-lg mb-4 text-secondaryTxt z-20 ">Hey there! I am</motion.p>
       <motion.h1 variants={fade(0.8, 0)} className="text-4xl font-bold mb-4 lg:text-7xl text-mainTxt z-20 typing-demo">Cee Jay Malacas</motion.h1>
-      <motion.h2 variants={fade(0.8, .5)} className="text-3xl lg:text-7xl font-bold mb-4 z-20 ">Coding for more money?!</motion.h2>
+      <motion.h2 variants={fade(0.8, .5)} className="text-3xl lg:text-7xl font-bold mb-4 z-20 ">I build stuff sometimes</motion.h2>
       <motion.p variants={fade(0.8, .7)} className="text-base font-thin mb-4  z-20 ">A highly passionate Front-end Web Developer and Mobile Developer.</motion.p>
       <Link to='/projects'>
         <motion.span variants={fade(0.8, .7)}

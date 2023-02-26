@@ -1,6 +1,7 @@
 import tempLogo from '../../assets/images/night-mode.png'
 import menu from '../../assets/images/menu.png'
 import close from '../../assets/images/close.png'
+import cm from '../../assets/images/c.png'
 import { navLinks } from '../../data/data'
 import { useState } from 'react'
 import { Link } from "react-router-dom";
@@ -28,7 +29,7 @@ const Header = ({ children }) => {
                         animate="onscreen"
                     >
                         <Link to='/' className="flex gap-3">
-                            <img className='w-7' src={tempLogo} />
+                            <img className='w-8 h-full ' src={cm} />
                             <h2 className="font-bold text-lg tracking-wider text-mainTxt">Cee</h2>
                         </Link>
                     </motion.div>

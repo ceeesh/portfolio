@@ -9,12 +9,12 @@ export const staggerContainer = (staggerChildren, delayChildren) => ({
 });
 
 export const fadeIn = (direction, type, delay, duration) => ({
-	hidden: {
+	offscreen: {
 		x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
 		y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
 		opacity: 0,
 	},
-	show: {
+	onscreen: {
 		x: 0,
 		y: 0,
 		opacity: 1,
