@@ -5,7 +5,7 @@ import cm from '../../assets/images/c.png'
 import { navLinks } from '../../data/data'
 import { useState } from 'react'
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { bounceIn } from '../../utils/framerMotion'
 
 const Header = ({ children }) => {
@@ -58,17 +58,32 @@ const Header = ({ children }) => {
                     </motion.nav>
                 </div>
 
-                <div className={`${navOpen ? 'flex' : 'hidden'} top-0 absolute left-0 right-0 h-screen z-[-20] bg-mainBg`}>
-                    <nav className="mx-auto px-5 w-full h-full flex">
-                        <ul className="flex flex-col items-center justify-center gap-6 w-full text-xl">
-                            {navLinks.map((nav, indx) => (
-                                <Link to={nav.url} onClick={openNav} key={indx}><li className="text-mainTxt hover:text-gray-700 
-                                hover:-translate-y-1 transition-all duration-300 delay-75">{nav.title}</li></Link>
-                            ))}
-                        </ul>
-                    </nav>
-                </div>
+                <AnimatePresence>
+                    {navOpen ? (
+                        <motion.div
+                            initial={{ y: -455, opacity: 0.5, }}
+                            animate={{ y: 0, opacity: 1, }}
+                            transition={{ duration: 0.5, type: 'spring', stiffness: 60 }}
+                            exit={{ opacity: 0, y: -455 }}
+                            className={`${navOpen ? 'flex' : 'hidden'} top-0 absolute left-0 right-0 h-screen z-[-20] bg-mainBg`}>
+                            <nav className="mx-auto px-5 w-full h-full flex">
+                                <ul className="flex flex-col items-center justify-center gap-6 w-full text-xl">
+                                    {navLinks.map((nav, indx) => (
+                                        <Link to={nav.url} onClick={openNav} key={indx}>
+                                            <li className="text-mainTxt hover:text-gray-700 
+         hover:-translate-y-1 transition-all duration-300 delay-75">{nav.title}
+                                            </li>
+                                        </Link>
+                                    ))}
+                                </ul>
+                            </nav>
+                        </motion.div>
+                    ) : null
+                    }
+
+                </AnimatePresence>
             </header>
+
             {children}
         </>
     )

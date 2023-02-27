@@ -4,7 +4,7 @@ import Contact from './Contact'
 import Intro from './Intro'
 import Projects from './Projects'
 import Skills from './Skills'
-import Bottom from './Bottom'
+import SubFooter from './SubFooter'
 
 const Main = () => {
     return (

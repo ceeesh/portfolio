@@ -8,7 +8,7 @@ const Footer = () => {
         <footer>
             <nav className="mb-4 lg:hidden">
                 <ul className="flex items-center justify-center gap-8">{socials.map((social, indx) => (
-                  <li key={indx}><a className="text-mainTxt" href={social.url}>{social.logo}</a></li>
+                  <li key={indx}><a className="text-mainTxt" href={social.url} target="_blank">{social.logo}</a></li>
                 ))}</ul>
             </nav>
             <p className='text-sm text-center flex gap-1 justify-center'>< RiCopyrightLine size={15} className="mt-0.5"/> 2022 Cee Jay Malacas. All Rights Reserved. </p>
