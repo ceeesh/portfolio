@@ -17,7 +17,7 @@ const Intro = () => {
       <Link to='/projects'>
         <motion.span variants={fade(0.8, .7)}
           className="z-20 px-12 py-2.5 text-lg rounded-md border-[0.1rem] bg-btnbg border-mainTxt text-mainTxt
-       hover:bg-btnHvr hover:-translate-y-1 transition all duration-300 delay-75">Projects
+       hover:bg-btnHvr transition-all duration-300 delay-75">Projects
         </motion.span>
       </Link>
       <p className="absolute -right-2 md:-bottom-2 lg:-bottom-2 lg:right-0 text-8xl font-bold text-btnbg flex flex-col justify-end items-end uppercase z-0">

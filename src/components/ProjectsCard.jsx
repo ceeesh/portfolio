@@ -5,7 +5,7 @@ const ProjectsCard = ({ project, card }) => {
     return (
         <div className={`${card ? 'card card2' : ''} bg-white bg-opacity-5 grid 
         rounded-lg text-center w-full p-5 shadow-5xl border border-r-0 
-        border-b-0 border-opacity-30 backdrop-filter backdrop-blur-sm transition-all`}>
+        border-b-0 border-opacity-30 transition-all`}>
                 <div className="mb-4 md:mb-6">
                     <p className="font-thin text-secondaryTxt">Featured Project</p>
                     <a className="text-xl font-bold text-mainTxt" href={project.liveUrl} target="_blank">{project.title}</a>
@@ -33,7 +33,3 @@ const ProjectsCard = ({ project, card }) => {
 }
 
 export default ProjectsCard
-
-// bg-white bg-opacity-5 flex flex-col 
-//         rounded-lg text-center w-full p-5 shadow-5xl border border-r-0 
-//         border-b-0 border-opacity-30 backdrop-filter backdrop-blur-sm transition-all

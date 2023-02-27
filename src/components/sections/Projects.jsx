@@ -1,6 +1,7 @@
 import ProjectsCard from "../ProjectsCard";
 import { projects } from '../../data/data';
 import MainProjectCards from "../MainProjectCards";
+import { Link } from "react-router-dom";
 
 
 const Projects = () => {
@@ -22,8 +23,9 @@ const Projects = () => {
                 ))}
             </div>
             <div className="w-full flex items-center justify-center cursor-pointer">
-                <a className="bg-btnbg hover:bg-btnHvr px-12 py-2.5 text-lg rounded-md text-mainTxt border-[0.1rem] border-mainTxt font-medium hover:-translate-y-1 transition all duration-300 delay-75">
-                    See more</a>
+                <Link to="/projects" className="bg-btnbg hover:bg-btnHvr px-12 py-2.5 text-lg rounded-md
+                 text-mainTxt border-[0.1rem] border-mainTxt 
+                 font-medium hover:-translate-y-1 transition-all duration-300 delay-75"> See more</Link>
                     </div>
         </section>
     )

@@ -51,6 +51,19 @@ export const spanFade = (delay) => ({
 	},
 });
 
+export const fadeDown = (direction, type, duration) => ({
+	offscreen: {
+		x: direction
+	},
+	onscreen: {
+		x: 0,
+		transition: {
+			type: type,
+			duration: duration,
+		},
+	}
+})
+
 export const bounceIn = (direction, type, duration, bounce) => ({
 	offscreen: {
 		x: direction

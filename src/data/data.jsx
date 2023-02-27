@@ -142,26 +142,26 @@ export const socials = [
 export const navLinks = [
     {
         title: 'About',
-        cName: 'nav_item',
+        type: 'nav_item',
         url: '/about',
     },
     {
         title: 'Skills',
-        cName: 'nav_item',
+        type: 'nav_item',
         url: '/skills',
     },
     {
         title: 'Projects',
-        cName: 'nav_item',
+        type: 'nav_item',
         url: '/projects',
     },
     {
         title: 'Contact',
-        cName: 'nav_item',
+        type: 'nav_item',
         url: '/contact',
     },
     {
-        cName: 'lightMode',
+        type: 'lightMode',
         url: lightMode,
     },
 ];

@@ -7,7 +7,7 @@ const Navs = () => {
                 <div className="flex flex-col items-center justify-center gap-6 text-mainTxt">
                     <ul className="flex flex-col items-center gap-6">
                         {socials.map((soc, indx) => (
-                            <li key={indx} href={soc.url} target="_blank" className="cursor-pointer">{soc.logo}</li>
+                            <li key={indx} className="cursor-pointer"><a href={soc.url} target="_blank">{soc.logo}</a></li>
                         ))}
                     </ul>
                     <div className="w-[1px] h-24 bg-mainTxt"></div>

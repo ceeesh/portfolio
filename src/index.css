@@ -10,7 +10,16 @@
 }
 
 *::-webkit-scrollbar {
-  width: 15px;
+  width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: white; 
+  border-radius: 5px; 
+  border: 1px;  
+}
+body::-webkit-scrollbar-track {
+  background: rgb(15, 23, 42, 1); 
 }
 
 .project_card:nth-child(odd)::after {
