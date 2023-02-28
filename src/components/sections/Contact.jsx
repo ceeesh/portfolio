@@ -17,7 +17,7 @@ const Contact = ({ pTop }) => {
                 <p className="text-center text-whiteSecondary mb-12 ">
                     Currently, I am looking for opportunities and accepting freelance projects. If you think I am a good asset, kindly send me a message.
                 </p>
-                <a className="cursor-pointer px-12 py-2.5 text-lg rounded-md 
+                <a href="https://mail.google.com/mail/u/0/?to=ceejaymalacas17@gmail.com&su=&body=&fs=1&tf=cm" target="_blank" className="cursor-pointer px-12 py-2.5 text-lg rounded-md 
                 border-[0.1rem] border-mainTxt text-mainTxt bg-btnbg 
                 hover:bg-btnHvr hover:-translate-y-1 transition-all duration-300 delay-75">Say Hello !</a>
             </div>

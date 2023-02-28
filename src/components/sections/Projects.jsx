@@ -15,7 +15,7 @@ const Projects = () => {
                 return {};
             }}
             initial={{ opacity: 0, y: 100, }}
-            animate={isInView && { opacity: 1, y: 0, transition: { duration: 1, delay: 0.4, type: "spring", stiffness: 50 } }}
+            animate={isInView && { opacity: 1, y: 0, transition: { duration: 1, delay: 0.2, type: "spring", stiffness: 50 } }}
             className={`min-h-screen pb-12`}>
             <div className="mb-12">
                 <h2 className="text-mainTxt text-4xl lg:text-5xl font-bold mb-4">Projects</h2>
