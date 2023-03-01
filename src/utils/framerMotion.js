@@ -8,25 +8,6 @@ export const staggerContainer = (staggerChildren, delayChildren) => ({
 	},
 });
 
-export const fadeIn = (direction, type, delay, duration) => ({
-	offscreen: {
-		x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
-		y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
-		opacity: 0,
-	},
-	onscreen: {
-		x: 0,
-		y: 0,
-		opacity: 1,
-		transition: {
-			type,
-			delay,
-			duration,
-			ease: 'easeIn',
-		},
-	},
-});
-
 export const fade = (duration, delay) => ({
 	offscreen: { opacity: 0 },
 	onscreen: {
