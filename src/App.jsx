@@ -7,22 +7,26 @@ import SkillsPage from "./pages/SkillsPage"
 import ProjectsPage from "./pages/ProjectsPage"
 import ContactPage from "./pages/ContactPage"
 import SubFooter from './components/sections/SubFooter'
+import { Context } from "./context/context"
+import { useContext } from "react"
 
 function App() {
 
+  const { updateTheme, theme } = useContext(Context)
+
   return (
-    <div className="bg-mainBg w-full text-secondaryTxt">
-      <Header>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/skills" element={<SkillsPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </Header>
-      <Navs />
-      <SubFooter />
+    <div className={` w-full ${localStorage.theme === 'true' ? `bg-white text-black` : `bg-mainBg text-secondaryTxt` }`}>
+        <Header>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/skills" element={<SkillsPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </Header>
+        <Navs />
+        <SubFooter />
     </div>
   )
 }

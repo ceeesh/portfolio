@@ -1,13 +1,3 @@
-export const staggerContainer = (staggerChildren, delayChildren) => ({
-	offscreen: {},
-	onscreen: {
-		transition: {
-			staggerChildren,
-			delayChildren,
-		},
-	},
-});
-
 export const fade = (duration, delay) => ({
 	offscreen: { opacity: 0 },
 	onscreen: {

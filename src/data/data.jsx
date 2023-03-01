@@ -1,5 +1,6 @@
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from "react-icons/io5";
 import lightMode from '../assets/images/sun.png'
+import darkMode from '../assets/images/night.png'
 import js from '../assets/images/js.png'
 import react from '../assets/images/react.svg'
 import vite from '../assets/images/vite.svg'
@@ -36,7 +37,7 @@ export const projects = [
     },
     {
         title: 'Elder Armor USA',
-        description: 'Tic Tac Toe',
+        description: 'Elder Armor is Hip Protector online store for elder people in US.',
         stackTech: ['WordPress', 'Elementor', 'WooCommerce', 'PHP'],
         liveUrl: 'https://elderarmorusa.com/',
         githubRepo: '',
@@ -162,7 +163,6 @@ export const navLinks = [
     },
     {
         type: 'lightMode',
-        url: lightMode,
     },
 ];
 

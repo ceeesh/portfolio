@@ -1,26 +1,36 @@
-import tempLogo from '../../assets/images/night-mode.png'
 import menu from '../../assets/images/menu.png'
 import close from '../../assets/images/close.png'
 import cm from '../../assets/images/c.png'
+import cmb from '../../assets/images/c-black.png'
+import lightMode from '../../assets/images/sun.png'
+import darkMode from '../../assets/images/night.png'
 import { navLinks } from '../../data/data'
 import { useState } from 'react'
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion"
 import { bounceIn } from '../../utils/framerMotion'
+import { useContext } from "react"
+import { Context } from '../../context/context'
 
 const Header = ({ children }) => {
     const [navOpen, setNavOpen] = useState(false)
     const body = document.querySelector('body')
+    const { updateTheme } = useContext(Context)
 
     const openNav = () => {
         setNavOpen(prevState => !prevState)
+    }
+
+    const changeColor = () => {
+        updateTheme()
     }
 
     !navOpen ? body.classList.remove('overflow-hidden') : body.classList.add('overflow-hidden')
 
     return (
         <>
-            <header className="fixed top-0 left-0 right-0 bg-mainBg z-50 w-full mx-auto px-5  md:px-10 lg:px-12 xl:px-0">
+            <header className={`${localStorage.theme === 'true' ? `bg-white text-black` : `bg-mainBg text-secondaryTxt`} 
+            fixed top-0 left-0 right-0 bg-mainBg z-50 w-full mx-auto px-5  md:px-10 lg:px-12 xl:px-0`}>
 
                 <div className="flex justify-between py-8 px-5 z-40 ">
                     <motion.div
@@ -29,9 +39,10 @@ const Header = ({ children }) => {
                         animate="onscreen"
                     >
                         <Link to='/' className="flex gap-3 ">
-                            <img className='w-8 h-full' src={cm} />
-                            <h2 className="font-bold text-lg tracking-wider text-mainTxt hover:text-gray-700 
-                                hover:-translate-y-1 transition-all duration-300 delay-75 ">Cee</h2>
+                            <img className='w-8 h-full' src={localStorage.theme === 'false' ? cm : cmb} />
+                            <h2 className={`${localStorage.theme === 'false' ? 'text-mainTxt' : 'text-black'}
+                            font-bold text-lg tracking-wider hover:text-gray-700 
+                                hover:-translate-y-1 transition-all duration-300 delay-75 `}>Cee</h2>
                         </Link>
                     </motion.div>
                     <motion.button
@@ -49,10 +60,13 @@ const Header = ({ children }) => {
                         <ul className="flex items-center justify-center w-full text-lg gap-6">
                             {navLinks.map((nav, indx) => {
                                 if (nav.type === 'lightMode') {
-                                    return <li key={indx} className="cursor-pointer hover:-translate-y-1 transition-all duration-300 delay-75"><img src={nav.url} /></li>
+                                    return <li key={indx} className="cursor-pointer hover:-translate-y-1 transition-all duration-300 delay-75">
+                                        <img src={localStorage.theme === 'false' ? lightMode : darkMode}
+                                            onClick={changeColor} />
+                                    </li>
                                 }
-                                return <Link to={nav.url} key={indx} className="text-mainTxt hover:text-gray-700 
-                                hover:-translate-y-1 transition-all duration-300 delay-75">{nav.title}</Link>
+                                return <Link to={nav.url} key={indx} className={`${localStorage.theme === 'false' ? 'text-mainTxt' : 'text-black'} hover:text-gray-700 
+                                hover:-translate-y-1 transition-all duration-300 delay-75`}>{nav.title}</Link>
                             })}
                         </ul>
                     </motion.nav>
