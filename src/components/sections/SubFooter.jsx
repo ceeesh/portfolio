@@ -1,8 +1,9 @@
 import React from 'react'
 import { socials } from '../../data/data'
 import { RiCopyrightLine } from "react-icons/ri";
-
+import { useThemeMode } from "react-theme-mode"
 const Footer = () => {
+  const [theme] = useThemeMode()
   return (
     <section className="max-w-[1440px] px-5 md:px-10 py-6 mx-auto text-whiteSecondary">
         <footer>
@@ -11,7 +12,7 @@ const Footer = () => {
                   <li key={indx}><a className="text-mainTxt" href={social.url} target="_blank">{social.logo}</a></li>
                 ))}</ul>
             </nav>
-            <p className='text-sm text-center flex gap-1 justify-center'>< RiCopyrightLine size={15} className="mt-0.5"/> 2022 Cee Jay Malacas. All Rights Reserved. </p>
+            <p className={`${theme === 'dark' ? 'text-mainTxt' : 'text-black'} text-sm text-center flex gap-1 justify-center`}>< RiCopyrightLine size={15} className="mt-0.5"/> 2022 Cee Jay Malacas. All Rights Reserved. </p>
         </footer>
     </section>
   )

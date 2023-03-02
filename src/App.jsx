@@ -7,15 +7,14 @@ import SkillsPage from "./pages/SkillsPage"
 import ProjectsPage from "./pages/ProjectsPage"
 import ContactPage from "./pages/ContactPage"
 import SubFooter from './components/sections/SubFooter'
-import { Context } from "./context/context"
-import { useContext } from "react"
+import { useThemeMode } from 'react-theme-mode'
 
 function App() {
 
-  const { theme } = useContext(Context)
+  const [theme] = useThemeMode()
 
   return (
-    <div className={` w-full ${theme ? `bg-white text-gray-500` : `bg-mainBg text-secondaryTxt`}`}>
+    <div className={` w-full ${theme === 'dark' ? `bg-mainBg text-secondaryTxt` : `bg-white text-gray-500`}`}>
         <Header>
           <Routes>
             <Route path="/" element={<Main />} />
