@@ -12,10 +12,10 @@ import { useContext } from "react"
 
 function App() {
 
-  const { updateTheme, theme } = useContext(Context)
+  const { theme } = useContext(Context)
 
   return (
-    <div className={` w-full ${localStorage.theme === 'true' ? `bg-white text-black` : `bg-mainBg text-secondaryTxt` }`}>
+    <div className={` w-full ${theme ? `bg-white text-gray-500` : `bg-mainBg text-secondaryTxt`}`}>
         <Header>
           <Routes>
             <Route path="/" element={<Main />} />
