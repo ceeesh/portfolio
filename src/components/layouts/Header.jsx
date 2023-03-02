@@ -9,27 +9,22 @@ import { useState } from 'react'
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion"
 import { bounceIn } from '../../utils/framerMotion'
-import { useContext } from "react"
-import { Context } from '../../context/context'
+import { useThemeMode } from 'react-theme-mode'
 
 const Header = ({ children }) => {
     const [navOpen, setNavOpen] = useState(false)
     const body = document.querySelector('body')
-    const { theme, updateTheme } = useContext(Context)
+    const [theme, setTheme] = useThemeMode()
 
     const openNav = () => {
         setNavOpen(prevState => !prevState)
-    }
-
-    const changeColor = () => {
-        updateTheme()
     }
 
     !navOpen ? body.classList.remove('overflow-hidden') : body.classList.add('overflow-hidden')
 
     return (
         <>
-            <header className={`${theme ? `bg-white` : `bg-mainBg`} 
+            <header className={`${theme === 'dark' ? `bg-mainBg` : `bg-white`} 
             fixed top-0 left-0 right-0 bg-mainBg z-50 w-full mx-auto px-5  md:px-10 lg:px-12 xl:px-0`}>
 
                 <div className="flex justify-between py-8 px-5 z-40 ">
@@ -39,8 +34,8 @@ const Header = ({ children }) => {
                         animate="onscreen"
                     >
                         <Link to='/' className="flex gap-3 ">
-                            <img className='w-8 h-full' src={theme ? cmb : cm } />
-                            <h2 className={`${theme ? 'text-black' : 'text-mainTxt'}
+                            <img className='w-8 h-full' src={theme === 'dark' ? cm : cmb } />
+                            <h2 className={`${theme === 'dark' ? 'text-mainTxt' : 'text-black'}
                             font-bold text-lg tracking-wider hover:text-gray-700 
                                 hover:-translate-y-1 transition-all duration-300 delay-75 `}>Cee</h2>
                         </Link>
@@ -61,11 +56,11 @@ const Header = ({ children }) => {
                             {navLinks.map((nav, indx) => {
                                 if (nav.type === 'lightMode') {
                                     return <li key={indx} className="cursor-pointer hover:-translate-y-1 transition-all duration-300 delay-75">
-                                        <img src={theme ? darkMode : lightMode}
-                                            onClick={changeColor} />
+                                        <img src={theme === 'dark' ? lightMode : darkMode}
+                                            onClick={() => setTheme( theme === 'dark' ? 'light' : 'dark')} />
                                     </li>
                                 }
-                                return <Link to={nav.url} key={indx} className={`${theme ? 'text-black' : 'text-mainTxt'} hover:text-gray-700 
+                                return <Link to={nav.url} key={indx} className={`${theme === 'dark' ? 'text-mainTxt' : 'text-black'} hover:text-gray-700 
                                 hover:-translate-y-1 transition-all duration-300 delay-75`}>{nav.title}</Link>
                             })}
                         </ul>

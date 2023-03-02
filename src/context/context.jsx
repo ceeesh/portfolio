@@ -10,10 +10,6 @@ export const ContextProvider = ({children}) => {
     setTheme(prevState => !prevState)
    }
 
-useEffect(() => {
-    console.log(theme)
-}, [theme])
-
   return (
     <Context.Provider value={{theme, updateTheme}}>
         {children}
