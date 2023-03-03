@@ -77,7 +77,7 @@ export const projects = [
     },
     {
         title: 'Banking App',
-        description: 'A simple bank website',
+        description: 'A simple bank website.',
         stackTech: ['React', 'TailwindCSS', 'Sweetalert2', 'DaisyUI', 'Vite'],
         liveUrl: 'https://kzldlgr.github.io/',
         githubRepo: 'https://github.com/ceeesh/kcd-banking-app',
@@ -85,7 +85,7 @@ export const projects = [
     },
     {
         title: 'Dictionary App',
-        description: 'A cloned dictionary, gives their meaning, or gives the equivalent words in a different language',
+        description: 'A cloned dictionary, provides their meaning, or gives the equivalent words in a different language.',
         stackTech: ['React', 'TailwindCSS', 'Vite', 'API'],
         liveUrl: 'https://dictionary-app-vite-react.netlify.app/',
         githubRepo: 'https://github.com/ceeesh/dictionary-app',
@@ -93,7 +93,7 @@ export const projects = [
     },
     {
         title: 'To-Do App',
-        description: 'A cloned dictionary, gives their meaning, or gives the equivalent words in a different language',
+        description: 'A To-Do app that has a dark/light theme toggle.',
         stackTech: ['React', 'TailwindCSS', 'Vite', 'API'],
         liveUrl: 'https://todo-vite-react.netlify.app/',
         githubRepo: 'https://github.com/ceeesh/todo-app-react',
@@ -101,7 +101,7 @@ export const projects = [
     },
     {
         title: 'Advice Generator App',
-        description: 'A cloned dictionary, gives their meaning, or gives the equivalent words in a different language',
+        description: 'Generates a random witty quotes of advice with Advice Slip API.',
         stackTech: ['React', 'TailwindCSS', 'Vite', 'API'],
         liveUrl: 'https://advice-gen-app-cjm.netlify.app/',
         githubRepo: 'https://github.com/ceeesh/advice-generator-app',
@@ -109,7 +109,7 @@ export const projects = [
     },
     {
         title: 'Tic Tac Toe',
-        description: 'A basic Tic Tac Toe game.',
+        description: 'A simple Tic Tac Toe game with dark/light theme toggle.',
         stackTech: ['VanillaJS', 'CSS'],
         liveUrl: 'https://ceeesh.github.io/tictactoe/',
         githubRepo: 'https://github.com/ceeesh/tictactoe',
