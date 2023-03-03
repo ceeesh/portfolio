@@ -49,4 +49,51 @@ export const bounceIn = (direction, type, duration, bounce) => ({
 	},
 });
 
+export const slideUp = (direction, duration) => ({
+	offscreen: {
+		y: direction
+	},
+	onscreen: {
+		y: 0,
+		transition: {
+			duration: duration,
+			ease: 'easeInOut',
+		},
+	},
+});
+
+export const slideLeft = (direction, duration) => ({
+	offscreen: {
+		x: direction,
+		rotate: -150,
+	},
+	onscreen: {
+		x: 0,
+		rotate: 0,
+		transition: {
+			duration: duration,
+			ease: 'easeInOut',
+		},
+	},
+});
+
+export const slideRight = (direction, duration) => ({
+	offscreen: {
+		x: direction,
+		rotate: 300,
+	},
+	onscreen: {
+		x: 0,
+		rotate: 90,
+		transition: {
+			duration: duration,
+			ease: 'easeInOut',
+		},
+	},
+});
+
+
+
+
+
 

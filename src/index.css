@@ -9,7 +9,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+.bodyDark {
+  background-color: rgba(15, 23, 42, 1);
+}
 
+.bodyLight {
+  background-color: white;
+}
 
 *::-webkit-scrollbar {
   width: 5px;
@@ -34,7 +40,7 @@ body::-webkit-scrollbar-track {
   background-size: cover;
   background-position: center;
   filter: blur(18px);
-  z-index: ;
+  z-index: 1;
 }
 
 .project_card:nth-child(even):after {

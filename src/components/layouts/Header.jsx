@@ -22,7 +22,16 @@ const Header = ({ children }) => {
         setNavOpen(prevState => !prevState)
     }
 
+    if(theme === 'dark'){
+        body.classList.add('bodyDark')
+        body.classList.remove('bodyLight')
+    }else {
+        body.classList.remove('bodyDark')
+        body.classList.add('bodyLight')
+    }
+
     !navOpen ? body.classList.remove('overflow-hidden') : body.classList.add('overflow-hidden')
+   
 
     return (
         <>
