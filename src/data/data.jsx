@@ -109,7 +109,7 @@ export const projects = [
     },
     {
         title: 'Tic Tac Toe',
-        description: 'Tic Tac Toe',
+        description: 'A basic Tic Tac Toe game.',
         stackTech: ['VanillaJS', 'CSS'],
         liveUrl: 'https://ceeesh.github.io/tictactoe/',
         githubRepo: 'https://github.com/ceeesh/tictactoe',
