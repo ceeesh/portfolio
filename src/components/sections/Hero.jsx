@@ -15,7 +15,7 @@ const Intro = () => {
       <motion.h1 variants={fade(0.8, 0)} initial="offscreen" animate="onscreen"
         className={`${theme === 'dark' ? 'text-mainTxt' : 'text-black'} text-4xl font-bold mb-4 lg:text-7xl z-20 typing-demo`}>Cee Jay Malacas.</motion.h1>
       <motion.h2 variants={fade(0.8, .5)} initial="offscreen" animate="onscreen"
-        className={`text-3xl lg:text-7xl font-bold mb-4 z-20 ${theme === 'dark' ? 'text-mainTxt' : 'text-black'}`}>I build stuff sometimes</motion.h2>
+        className={`text-3xl lg:text-7xl font-bold mb-4 z-20 ${theme === 'dark' ? 'text-secondaryTxt' : 'text-black'}`}>I build stuff sometimes</motion.h2>
       <motion.p variants={fade(0.8, .7)} initial="offscreen" animate="onscreen"
         className="text-base font-thin mb-4  z-20 ">A highly passionate Front-end Web Developer and Mobile Developer.</motion.p>
       <Link to='/projects'>
