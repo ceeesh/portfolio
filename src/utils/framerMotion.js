@@ -48,3 +48,5 @@ export const bounceIn = (direction, type, duration, bounce) => ({
 		},
 	},
 });
+
+

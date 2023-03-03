@@ -37,7 +37,7 @@ export const projects = [
     },
     {
         title: 'Elder Armor USA',
-        description: 'Elder Armor is Hip Protector online store for elder people in US.',
+        description: 'Elder Armor is a Hip Protector online store for elder people in US.',
         stackTech: ['WordPress', 'Elementor', 'WooCommerce', 'PHP'],
         liveUrl: 'https://elderarmorusa.com/',
         githubRepo: '',
