@@ -5,7 +5,7 @@ import { useThemeMode } from 'react-theme-mode'
 const ProjectsCard = ({ project, card }) => {
     const [theme] = useThemeMode()
     return (
-        <div className={`${card ? 'card card2' : ''} ${theme === 'dark' ? 'bg-white bg-opacity-5' : 'bg-black bg-opacity-100' }  grid 
+        <div className={`${card ? 'card card2' : ''} ${theme === 'dark' ? 'bg-white bg-opacity-5' : 'bg-colr bg-gradient-to-br from-colr2 to-colr3' }  grid 
         rounded-lg text-center w-full p-5 shadow-5xl border border-r-0 
         border-b-0 border-opacity-30 transition-all`}>
                 <div className="mb-4 md:mb-6">

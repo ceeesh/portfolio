@@ -82,14 +82,12 @@ body::-webkit-scrollbar-track {
   z-index: 1;
 }
 
-
 .typing-demo {
-  width: 15ch;
-  animation: typing 2s steps(15), blink 0.5s step-end infinite alternate;
+  width: 14ch;
+  animation: typing 2s steps(20), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: monospace;
 }
 
 @keyframes typing {
@@ -102,4 +100,10 @@ body::-webkit-scrollbar-track {
   50% {
     border-color: transparent;
   }
+}
+
+.text-stroke {
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
