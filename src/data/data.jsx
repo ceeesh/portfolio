@@ -1,6 +1,6 @@
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoGithub, IoLogoInstagram } from "react-icons/io5";
-import lightMode from '../assets/images/sun.png'
-import darkMode from '../assets/images/night.png'
+import exp from '../assets/images/express.png'
+import exp2 from '../assets/images/express2.png'
 import js from '../assets/images/js.png'
 import react from '../assets/images/react.svg'
 import vite from '../assets/images/vite.svg'
@@ -174,6 +174,10 @@ export const skillStack = [
     {
         title: 'React',
         logo: react
+    },
+    {
+        title: 'Express',
+        logo: exp2
     },
     {
         title: 'Vite',
