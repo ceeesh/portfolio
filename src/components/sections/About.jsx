@@ -20,7 +20,7 @@ const About = () => {
 
                         className={`${theme === 'dark' ? '' : 'text-black'}text-1xl`}>Hi. I'm Cee Jay.</h3>
                     <p>
-                        I am a Front-End Developer who loves to apply his knowledge
+                        I am a Full-Stack Web Developer who loves to apply his knowledge
                         to solve problems, create powerful products and impact businesses/lives.
                         I am naturally curios and always trying to improve my skills.
                     </p>
