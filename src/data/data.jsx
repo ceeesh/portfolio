@@ -25,6 +25,12 @@ import advice from '../assets/images/advice.png'
 import tictactoe from '../assets/images/tictactoe.png'
 import youtube from '../assets/images/youtube.png'
 import portfolio from '../assets/images/portfolio.png'
+import Sql from '../assets/images/SQL.png'
+import postgre from '../assets/images/postgre.png'
+import sqlite from '../assets/images/pngegg.png'
+import postman from '../assets/images/postman.svg'
+import github from '../assets/images/github.png'
+import weby from '../assets/images/weby.png'
 
 export const projects = [
     {
@@ -42,6 +48,14 @@ export const projects = [
         liveUrl: 'https://elderarmorusa.com/',
         githubRepo: '',
         img: elderarmorusa,
+    },
+    {
+        title: 'Weby',
+        description: 'A React on Rails application that allows users to schedule online appointments for their website design ideas.',
+        stackTech: ['Rails', 'React', 'TailwindCSS', 'Vite'],
+        liveUrl: 'https://weby-beta.vercel.app/',
+        githubRepo: 'https://github.com/ceeesh/weby',
+        img: weby,
     },
     {
         title: 'React Calculator App',
@@ -223,6 +237,27 @@ export const skillStack = [
         title: 'Bootstrap',
         logo: bootstrap
     },
+    {
+        title: 'SQL',
+        logo: Sql
+    },
+    {
+        title: 'PostgreSQL',
+        logo: postgre
+    },
+    {
+        title: 'Sqlite',
+        logo: sqlite
+    },
+    {
+        title: 'Postman',
+        logo: postman
+    },
+    {
+        title: 'Github',
+        logo: github
+    }
 ]
+
 
 export const lastName = 'MALACAS'
