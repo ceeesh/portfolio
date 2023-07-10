@@ -37,7 +37,7 @@ export const projects = [
         title: 'My Portfolio Website',
         description: 'My newly created Front-End Web Developer Portfolio Website.',
         stackTech: ['React', 'TailwindCSS', 'Framer Motion', 'Vite'],
-        liveUrl: 'https://ceeesh.github.io/MomentumApp/',
+        liveUrl: 'https://malacas.vercel.app/',
         githubRepo: 'https://github.com/ceeesh/portfolio',
         img: portfolio,
     },
