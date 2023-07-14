@@ -93,7 +93,7 @@ export const projects = [
         title: 'Banking App',
         description: 'A simple bank website.',
         stackTech: ['React', 'TailwindCSS', 'Sweetalert2', 'DaisyUI', 'Vite'],
-        liveUrl: 'https://kzldlgr.github.io/',
+        liveUrl: 'https://kzldlgr.github.io/kcd-banking-app/',
         githubRepo: 'https://github.com/ceeesh/kcd-banking-app',
         img: bankingapp,
     },
