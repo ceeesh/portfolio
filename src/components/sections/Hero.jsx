@@ -3,6 +3,7 @@ import { fade, spanFade } from "../../utils/framerMotion"
 import { lastName } from '../../data/data'
 import { Link } from "react-router-dom"
 import { useThemeMode } from "react-theme-mode"
+import resume from '../../assets/images/cjmresume.pdf'
 
 const Intro = () => {
   const [theme] = useThemeMode()
@@ -18,12 +19,20 @@ const Intro = () => {
         className={`text-3xl lg:text-7xl font-bold mb-4 z-20 ${theme === 'dark' ? 'text-secondaryTxt' : 'text-black'}`}>I build stuff sometimes</motion.h2>
       <motion.p variants={fade(0.8, .7)} initial="offscreen" animate="onscreen"
         className="text-base font-thin mb-4  z-20 ">A highly passionate Full-Stack Web Developer and Mobile Developer.</motion.p>
-      <Link to='/projects'>
-        <motion.span variants={fade(0.8, .7)} initial="offscreen" animate="onscreen"
-          className={`${theme === 'dark' ? 'bg-btnbg border-mainTxt text-mainTxt hover:bg-btnHvr' : 'text-black border-black hover:bg-black hover:text-mainTxt'}
-          z-20 px-12 py-2.5 text-lg rounded-md border-[0.1rem] transition-all duration-300 delay-75`}>Projects
-        </motion.span>
-      </Link>
+      <div className="flex gap-2">
+        <Link to='/projects'>
+          <motion.span variants={fade(0.8, .7)} initial="offscreen" animate="onscreen"
+            className={`${theme === 'dark' ? 'bg-btnbg border-mainTxt text-mainTxt hover:bg-btnHvr' : 'text-black border-black hover:bg-black hover:text-mainTxt'}
+          z-20 px-10 py-2 md:px-12 md:py-2.5 text-sm md:text-lg rounded-md border-[0.1rem] transition-all duration-300 delay-75`}>Projects
+          </motion.span>
+        </Link>
+        <a className="" href={resume} download="resume">
+          <motion.span variants={fade(0.8, .7)} initial="offscreen" animate="onscreen"
+            className={`${theme === 'dark' ? 'bg-btnbg border-mainTxt text-mainTxt hover:bg-btnHvr' : 'text-black border-black hover:bg-black hover:text-mainTxt'}
+          z-20 px-4 py-2 md:px-6 md:py-2.5 text-sm md:text-lg rounded-md border-[0.1rem] transition-all duration-300 delay-75`}>Download CV
+          </motion.span>
+        </a>
+      </div>
       <p className={`${theme === 'dark' ? 'text-btnbg' : 'text-stroke font-thin'} absolute -right-2 md:-bottom-2 lg:-bottom-2 lg:right-0 text-8xl font-bold hidden sm:flex flex-col justify-end items-end uppercase z-0`}>
         {name.map((letter, idx) => (
           <motion.span variants={spanFade(idx)} initial="offscreen" animate="onscreen" key={idx}>{letter}</motion.span>
