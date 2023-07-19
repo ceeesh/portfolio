@@ -31,6 +31,7 @@ import sqlite from '../assets/images/pngegg.png'
 import postman from '../assets/images/postman.svg'
 import github from '../assets/images/github.png'
 import weby from '../assets/images/weby.png'
+import linux from '../assets/images/linux.png'
 
 export const projects = [
     {
@@ -256,6 +257,10 @@ export const skillStack = [
     {
         title: 'Github',
         logo: github
+    },
+    {
+        title: 'Linux',
+        logo: linux
     }
 ]
 
