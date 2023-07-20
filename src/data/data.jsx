@@ -32,6 +32,8 @@ import postman from '../assets/images/postman.svg'
 import github from '../assets/images/github.png'
 import weby from '../assets/images/weby.png'
 import linux from '../assets/images/linux.png'
+import php from '../assets/images/php.png'
+import laravel from '../assets/images/laravel.png'
 
 export const projects = [
     {
@@ -261,6 +263,14 @@ export const skillStack = [
     {
         title: 'Linux',
         logo: linux
+    },
+    {
+        title: 'Php',
+        logo: php
+    },
+    {
+        title: 'Laravel',
+        logo: laravel
     }
 ]
 
