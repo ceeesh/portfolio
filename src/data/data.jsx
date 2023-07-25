@@ -34,6 +34,7 @@ import weby from '../assets/images/weby.png'
 import linux from '../assets/images/linux.png'
 import php from '../assets/images/php.png'
 import laravel from '../assets/images/laravel.png'
+import stockapp from '../assets/images/stockapp.png'
 
 export const projects = [
     {
@@ -59,6 +60,14 @@ export const projects = [
         liveUrl: 'https://weby-beta.vercel.app/',
         githubRepo: 'https://github.com/ceeesh/weby',
         img: weby,
+    },
+    {
+        title: 'Bullish Hunter',
+        description: 'A Stock Trading Application built on Ruby on Rails, which allows users to buy stocks through a market monitoring API.',
+        stackTech: ['Rails', 'Ruby', 'Bootstrap'],
+        liveUrl: 'https://malacas.vercel.app/',
+        githubRepo: 'https://github.com/ceeesh/stock_app',
+        img: stockapp,
     },
     {
         title: 'React Calculator App',
