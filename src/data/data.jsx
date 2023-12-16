@@ -36,6 +36,7 @@ import php from '../assets/images/php.png'
 import laravel from '../assets/images/laravel.png'
 import stockapp from '../assets/images/stockapp.png'
 import sqlworkbench from '../assets/images/sqlworkbench.png'
+import docker from '../assets/images/docker.png'
 
 export const projects = [
     {
@@ -285,6 +286,10 @@ export const skillStack = [
     {
         title: 'SQL Workbench',
         logo: sqlworkbench
+    },
+    {
+        title: 'Docker',
+        logo: docker
     }
 ]
 
