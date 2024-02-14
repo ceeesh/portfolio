@@ -37,6 +37,8 @@ import laravel from '../assets/images/laravel.png'
 import stockapp from '../assets/images/stockapp.png'
 import sqlworkbench from '../assets/images/sqlworkbench.png'
 import docker from '../assets/images/docker.png'
+import capital from '../assets/images/capital.png'
+import fetch from '../assets/images/fetch.png'
 
 export const projects = [
     {
@@ -46,6 +48,22 @@ export const projects = [
         liveUrl: 'https://malacas.vercel.app/',
         githubRepo: 'https://github.com/ceeesh/portfolio',
         img: portfolio,
+    },
+    {
+        title: 'Capital Office UK',
+        description: "A Laravel & React app that manages the organization's sales, reports, documents and clients' accounts.",
+        stackTech: ['Laravel', 'PHP', 'React', 'Bootstrap', 'Vite', 'Docker', 'MySQL'],
+        liveUrl: 'https://admin.capital-office.co.uk/login',
+        githubRepo: '',
+        img: capital,
+    },
+    {
+        title: 'Fetch Workpapers',
+        description: "A Laravel & PHP app that provides accountants with a transformative solution to simplify and automate their workpapers using Microsoft Excel.",
+        stackTech: ['Laravel', 'PHP', 'React', 'Bootstrap', 'Vite', 'MySQL'],
+        liveUrl: 'https://fetc.dev.hpprojects.net/',
+        githubRepo: '',
+        img: fetch,
     },
     {
         title: 'Elder Armor USA',
