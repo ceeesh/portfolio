@@ -3,7 +3,7 @@ import { fade, spanFade } from "../../utils/framerMotion"
 import { lastName } from '../../data/data'
 import { Link } from "react-router-dom"
 import { useThemeMode } from "react-theme-mode"
-import resume from '../../assets/images/CeeJay-Malacas-2024.pdf'
+import resume from '../../assets/images/CeeJayMalacas2024.pdf'
 
 const Intro = () => {
   const [theme] = useThemeMode()
